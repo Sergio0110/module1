@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="img/logo1.png">
-    
     <title>Go</title>
 </head>
 <body>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
     <img src="img/logo.jpg" alt="логотип меню" height="98">
     
     <h1>Меню</h1>
-    <ul>
-        <li><a href="">Залы</a></li>
-        <li><a href="">О нас</a></li>
-        <li><a href="">Бронь</a></li>
-        <li><a href="">Отзывы</a></li>
-        <li><a href="">Контакты</a></li>
-    </ul>
+        <ul>
+            <li><a href="">Залы</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Бронь</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
     <h2>У нас есть все для классного отдыха с друзьями!</h2>
         <ul>
             <li><img src="img/vr.jpg" alt="ВиАр очки" height="320"> 
@@ -30,18 +30,78 @@
             <li>PlayStation 5</li>
         </ul>
 
-        <h2>Наши залы</h2>
-            <ol>
-                <li><a href="links/vibes.html">80`s vibes</a></li>
-                <li><a href="links/starwars.html">Star wars</a></li>
-                <li><a href="links/wildwest.html">Wild west</a></li>
-                <li><a href="links/neon.html" target="_blank">Neon style</a></li>
-            </ol>
+    <h2>Наши залы</h2>
+        <ol>
+            <li><a href="links/vibes.html">80`s vibes</a></li>
+            <li><a href="links/starwars.html">Star wars</a></li>
+            <li><a href="links/wildwest.html">Wild west</a></li>
+            <li><a href="links/neon.html" target="_blank">Neon style</a></li>
+        </ol>
 
-    <h2>О нас</h2>
+    <h2>Забронировать</h2>
+        <fieldset>
+            <input type="radio" name="80`s vibes" value="">80`s vibes
+            <input type="radio" name="Star wars" value="">Star wars
+            <input type="radio" name="Wild west" value="">Wild west
+            <input type="radio" name="Neon style" value="">Neon style
+        </fieldset><br>
+            
+        <fieldset>
+            <legend>Собери набор развлечениий</legend>
+                <fieldset>
+                    <legend>Приставка:</legend>
+                    <input type="radio" name="PlayStation" value="">PlayStation
+                    <input type="radio" name="Sega Mega Drive" value="">Sega Mega Drive
+                    <input type="radio" name="X-Box One S" value="">X-Box One S
+                    <input type="radio" name="Dendy" value="">Dendy
+                </fieldset>
 
-    <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p> 
-    <p> Каждый день мы стараемся создать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
+                <fieldset>
+                    <legend>Настольные игры:</legend>
+                    <input type="checkbox" name="Jenga" >Jenga
+                    <input type="checkbox" name="Monopoly" >Monopoly
+                    <input type="checkbox" name="Манчкнин" >Манчкнин
+                    <input type="checkbox" name="Alias" >Alias
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Дополнительно:</legend>
+                    <input type="checkbox" name="Караоке">Караоке
+                    <input type="checkbox" name="VR">VR
+                </fieldset>
+        </fieldset>
+        
+                <fieldset>
+                    <legend>Выберите дату и время</legend>
+                    Дата* <input type="date" name="date" required>
+                    Время* <input type="time" name="time" required><br><br>
+                    <label>
+                    Кличество человек* <input type="number" name="number of people" required>
+                    </label><br><br>
+                    <label>
+                    Имя* <input type="text" name="name" placeholder="Введите ваше имя" required>
+                    </label><br><br>
+                    <label>
+                    Фамилия* <input type="text" name="surname" placeholder="Введите фамилию" required>
+                    </label><br><br>
+                    <label>
+                    Номер телефона* <input type="tel" name="number" required title="+7(...)-...-..-.." pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                    </label><br><br>
+                    <input type="checkbox" name="Согласие с возрастом" required>Я старше 18 лет    
+                    </fieldset><br>
+                    <input type="submit" value="Забронировать"> 
+                    <input type="checkbox" name="data processing" value="data" required> Согласен на обработку данных
+                    <input type="submit" name="Отрправка формы на сервер">
+
+        <h2>О нас</h2>
+
+            <p>
+                Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.
+            </p> 
+            
+            <p>
+                Каждый день мы стараемся создать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира
+            </p>
     
     <blockquote>
         <p>
@@ -53,23 +113,29 @@
         </p>
     </blockquote>
 
-    <h2>Контакты</h2>
+        <h2>Контакты</h2>
 
-    <p>
-        г. Москва ул, Аквамарина, 16
-    </p>
+            <p>
+                г. Москва ул, Аквамарина, 16
+            </p>
 
-    <p>
-        <a href="tel:8(950)930-28-93">тел: 8(950)930-28-93</a>
-    </p>
-    <p>
-        <a href="mailto:GameOver@gmail.com" target="-blank">GameOver@gmail.com</a>
-    </p>
+            <p>
+                <a href="tel:8(950)930-28-93">тел: 8(950)930-28-93</a>
+            </p>
 
-    <ul>
-        <li><a href="https://vk.com/vk">Vkontakte</a></li>
-        <li><a href="https://web.telegram.org/k/">Telegram.</a></li>
-    </ul>
+            <p>
+                <a href="mailto:GameOver@gmail.com" target="-blank">GameOver@gmail.com</a>
+            </p>
 
+            <ul>
+                <li>
+                    <a href="https://vk.com/vk">Vkontakte</a>
+                </li>
+
+                <li>
+                    <a href="https://web.telegram.org/k/">Telegram.</a>
+                </li>
+            </ul>
 </body>
+
 </html>
