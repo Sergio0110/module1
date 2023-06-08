@@ -38,6 +38,61 @@
             <li><a href="links/neon.html" target="_blank">Neon style</a></li>
         </ol>
 
+    <h2 align="center">Забронировать зал просто</h2>
+
+        <h3 align="center">Выберите зал</h3>
+
+            <p align="center">
+                <button>80's vibes</button> 
+                <button>STAR WARS</button>
+                <button>WILD WEST</button>
+                <button>NEON STYLE</button></p>
+            <h3 align="center">Собери набор развлечений</h3>
+
+            <table>
+                <tr>
+                    <td><b>Приставка</b></td>
+                    <td><b>Настольные игры</b></td>
+                    <td><b>Дполнительно</b></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="80`s vibes" value="">PlayStation 5</td>
+                    <td><input type="checkbox" name="Jenga" id=""> jenga</td>
+                    <td><input type="checkbox" name="Караоке">Караоке</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Sega Mega Drive" id="">Sega Mega Drive</td>
+                    <td><input type="checkbox" name="Monopoly" id="">Monopoly</td>
+                    <td><input type="checkbox" name="VR" id="">VR</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="X-Box One S" id="">X-Box One S</td>
+                    <td><input type="checkbox" name="Манчики" id="">Манчики</td>
+                </tr>
+            </table>
+
+            <table>
+                <caption>Выбериете дату и время</caption>
+                <tr>
+                    <td>Дата <input type="date" name="date" id=""></td>
+                    <td>Время <input type="time" name="time" id=""></td>
+                    <td><label>Имя <input size="20" type="text" name="name" id=""></label></td>
+                    <td><label>Телефон <input type="tel" name="phone" id=""></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Сколко человек <input type="number" name="number" id="" required></label></td>
+                    <td><label>Фамилия <input type="text" name="surname" id=""required></label></td>
+                    <td><label>E-mail <input type="email" name="e-mail" id="" required></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="submit" value="Забронировать"></td>
+                </tr>
+            </table>
+
+
     <h2>Забронировать</h2>
         <fieldset>
             <input type="radio" name="80`s vibes" value="">80`s vibes
@@ -76,7 +131,7 @@
                     Дата* <input type="date" name="date" required>
                     Время* <input type="time" name="time" required><br><br>
                     <label>
-                    Кличество человек* <input type="number" name="number of people" required>
+                    Количество человек* <input type="number" name="number of people" required>
                     </label><br><br>
                     <label>
                     Имя* <input type="text" name="name" placeholder="Введите ваше имя" required>
