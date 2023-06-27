@@ -28,8 +28,10 @@
                 <h1>У нас есть все для классного отдыха с друзьями!</h1>
                     <ul>
                         <li>
-                            <img src="img/vr.jpg" alt="ВиАр очки" height="320">
-                            VR очки 
+                            <figure>
+                                <img src="img/vr.jpg" alt="ВиАр очки" height="320">
+                                <figcaption>VR очки </figcaption>
+                            </figure>
                         </li>
 
                         <li> 
@@ -68,10 +70,10 @@
                 <h2>Забронировать</h2>
                     <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
                         <fieldset>
-                            <label><input type="radio" name="hall" value="80`s vibes"> 80`s vibes</label>
-                            <label><input type="radio" name="hall" value="Star wars"> Star wars</label>
-                            <label><input type="radio" name="hall" value="Wild west"> Wild west</label>
-                            <label><input type="radio" name="hall" value="Neon style"> Neon style</label>                        
+                            <input type="radio" name="hall" value="80`s vibes" id="80`s vibes"> <label for="80`s vibes">80`s vibes</label>
+                            <input type="radio" name="hall" value="Star wars" id="Star wars"> <label for="Star wars">Star wars</label>
+                            <input type="radio" name="hall" value="Wild west" id="Wild west"><label for="Wild west">Wild west</label>
+                            <input type="radio" name="hall" value="Neon style" id="Neon style"> <label for="Neon style">Neon style</label>                        
                         </fieldset>
                     
                         <fieldset>
@@ -101,22 +103,22 @@
                 <!-- можно и не писать id и for если <input> обернуть в <label>-->
                         <fieldset>
                             <legend>Выберите дату и время</legend>
-                                    <label for="date">Дата* 
-                                        <input type="date" name="date" id="date" required></label>                       
-                                    <label for="time">Время* 
-                                        <input type="time" name="time" id="time" required></label>                     
-                                    <label for="numbofpeople">Количество человек* 
-                                        <input type="number" name="number of people" id="numbofpeople" required></label>                                                 
-                                    <label for="name">Имя* 
+                                    <label for="date">Дата*</label>
+                                        <input type="date" name="date" id="date" required>                       
+                                    <label for="time">Время*</label>
+                                        <input type="time" name="time" id="time" required>                     
+                                    <label for="numbofpeople">Количество человек*</label> 
+                                        <input type="number" name="number of people" id="numbofpeople" required>                                                
+                                    <label for="name">Имя*</label>
                                         <input type="text" name="name" id="name" placeholder="Введите ваше имя" required></label>                                              
-                                    <label for="surname"> Фамилия* 
-                                        <input type="text" name="surname" id="surname" placeholder="Введите фамилию" required></label>                                                    
-                                    <label for="number">Номер телефона* 
+                                    <label for="surname"> Фамилия*</label>
+                                        <input type="text" name="surname" id="surname" placeholder="Введите фамилию" required>                                                    
+                                    <label for="number">Номер телефона*</label> 
                                         <input type="tel" name="number" id="number" required title="+7...-...-..-.." pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"></label>                                                 
-                                    <label for="concord">
-                                        <input type="checkbox" name="concord" id="concord" required>Я старше 18 лет</label>
-                                    <label for="data processing">
-                                        <input type="checkbox" name="concord" id="data processing" value="yes" required> Согласен на обработку данных</label>   
+                                    <label for="concord"></label>
+                                        <input type="checkbox" name="concord" id="concord" required>Я старше 18 лет
+                                    <label for="data processing"></label>
+                                        <input type="checkbox" name="concord" id="data processing" value="yes" required> Согласен на обработку данных   
                         </fieldset>                   
                                     <button type="submit" value="button">Забронировать</button>                        
                     </form>                        
@@ -142,87 +144,39 @@
                         </p>
                     </blockquote>
                 </section>
-                        
-            <!--<section id="reviews">
-                <table>
-                    <caption>
-                        <b>ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</b>
-                    </caption>
-                    <tr>
-                        <td>
-                            <figure>
-                                <img src="./img/Delaem-krugloe-foto-v-Fotoshope-7.png" alt="Фото мужчины" height="200">
-                                <figcaption>Макс Самойлов</figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            Отмечали здесь ден рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном ингровом погружении. Сервис на высоте!
-                        </td>
-                        <tr>
-                            <td>
+            <section id="reviews">
+                <h2>Отзывы посетителей</h2>
+                    <ul>
+                        <li>
+                            <article class="review">
+                                <figure>
+                                    <img src="./img/Delaem-krugloe-foto-v-Fotoshope-7.png" alt="Фото мужчины" height="200">
+                                    <figcaption>Макс Самойлов</figcaption>
+                                </figure>
+                                <p>Отмечали здесь ден рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном ингровом погружении. Сервис на высоте!</p>                
+                            </article>
+                        </li>
+                        <li>
+                            <article class="review">                    
                                 <figure>
                                     <img src="./img/0aeb27b230deae824f3d1bce090bc2e9.png" alt="фото женщины" height="250">
                                     <figcaption>Оксана Григорьева</figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                                </figure>                                       
+                                <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.</p>                    
+                            </article>
+                        </li>
+                        <li>
+                            <article class="review">                    
                                 <figure>
-                                    <img src="./img/34.png" alt="Мужик" height="200">
+                                    <img src="./img/34.png" alt="Панда" height="200">
                                     <figcaption>Никита Ященко</figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных воин, попал в атмосферу космоса.
-                            </td>
-                        </tr>
-                    </tr>
-                </table>
-            </section>-->
-            <section id="reviews">
-                <h2>Отзывы посетителей</h2>
-                
-                <article class="review">
-                    <div class="user-info">
-                        <figure>
-                            <img src="./img/Delaem-krugloe-foto-v-Fotoshope-7.png" alt="Фото мужчины" height="200">
-                            <figcaption>Макс Самойлов</figcaption>
-                        </figure>
-                    </div>
-                    <div class="review-content">
-                        <p>Отмечали здесь ден рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном ингровом погружении. Сервис на высоте!</p>
-                    </div>
-                </article>
-                
-                <article class="review">
-                    <div class="user-info">
-                        <figure>
-                            <img src="./img/0aeb27b230deae824f3d1bce090bc2e9.png" alt="фото женщины" height="250">
-                            <figcaption>Оксана Григорьева</figcaption>
-                        </figure>
-                    </div>
-                    <div class="review-content">
-                        <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.</p>
-                    </div>
-                    </article>
-                
-                <article class="review">
-                    <div class="user-info">
-                        <figure>
-                            <img src="./img/34.png" alt="Панда" height="200">
-                            <figcaption>Никита Ященко</figcaption>
-                        </figure>
-                    </div>
-                    <div class="review-content">
-                        <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных воин, попал в атмосферу космоса.</p>
-                    </div>
-                </article>
+                                </figure>                    
+                                <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных воин, попал в атмосферу космоса.</p>                    
+                        </article>
+                        </li>
+                    </ul>
             </section>
-
+            
             <section>
                 <h2>Частые вопросы</h2>
                         <ul class="list">
@@ -248,14 +202,16 @@
                         <a href="mailto:GameOver@gmail.com" >GameOver@gmail.com</a>
                     </p> 
                 </address>                          
-                <ul class="menu">
-                    <li>
-                        <a href="https://vk.com/vk" target="_blank">Vkontakte</a>
-                    </li>   
-                    <li>
-                        <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
-                    </li>
-                </ul>                
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="https://vk.com/vk" target="_blank">Vkontakte</a>
+                        </li>   
+                        <li>
+                            <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+                        </li>
+                    </ul>
+                </nav>                
         </footer>
     </div>
 </body>

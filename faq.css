@@ -1,6 +1,4 @@
 .element {
-    background-color: #fff;
-    color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
@@ -8,30 +6,23 @@
 }
 
 .element:nth-child(even){
-    background-color: #d372ec;
-    color: #dbd5db;
-    position: relative;
+    background-color: #440F51;
+    color: #ffffff;
+    
+}
+
+.element:nth-child(odd){
+    background-color: #f4eff5;
+    color: #121111;
+    
+}
+
+.element:last-child{
+    margin-bottom: 0px;
 }
 
 
 .list {
-    content: "";
     list-style: none;
     padding: 0;
-}
-
-.element {
-    position: relative;    
-}
-
-li::after {
-    content: "";
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-image: url("./img/open-purple.svg");
-    background-size: cover;
 }
